@@ -1,0 +1,94 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.titulo {
+    text-align: center;
+    padding: 30px;
+    font-size: 2.5em;
+    color: #4CAF50; 
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    width: 90%;
+    margin: auto;
+}
+
+.articulo {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    width: 100%; 
+}
+
+.articulo > div {
+    flex: 1 1 300px; 
+    margin: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; 
+}
+
+.articulo > div:hover {
+    transform: scale(1.02); 
+}
+
+.articulo img {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.articulo h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.articulo p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.articulo a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    color: white; 
+    background-color: #4CAF50; 
+    border-radius: 5px; 
+    text-decoration: none; 
+}
+
+.articulo a:hover {
+    background-color: #45a049; 
+}
+
+.piedepagina {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white; 
+}
+
+@media (max-width: 768px) {
+    .articulo > div {
+        flex: 1 1 100%; 
+    }
+}
